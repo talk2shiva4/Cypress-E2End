@@ -1,0 +1,24 @@
+{
+  "name": "cypress-e2end",
+  "version": "1.0.0",
+  "description": "cypress kickstart",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talk2shiva4/Cypress-E2End.git"
+  },
+  "author": "shiv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/talk2shiva4/Cypress-E2End/issues"
+  },
+  "homepage": "https://github.com/talk2shiva4/Cypress-E2End#readme",
+  "devDependencies": {
+    "cypress": "^13.9.0",
+    "cypress-xpath": "^2.0.1",
+    "mochawesome": "^7.1.3"
+  }
+}
