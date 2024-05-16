@@ -18,4 +18,15 @@ describe('Test Automation',()=>{
         crPurcOrd_Obj.enter_delhiveryPlanDate(createPurchaseOrd.enter_delhiveryPlanDate)
         crPurcOrd_Obj.clickOnSaveBtn(createPurchaseOrd.clickOnSaveBtn)
     })
+
+    it('Find all broken links', () => {
+        crPurcOrd_Obj.openURL().get('a').each(link => {
+        if (link.prop('href'))
+        cy.request({
+        url: link.prop('href'),
+        failOnStatusCode: false
+        })
+        cy.log( link.prop('href'))
+        })
+    })
 })

@@ -48,10 +48,10 @@ export class createPurchaseOrd{
     enter_delhiveryPlanDate(del_plandt){
         cy.get(this.weblocators.delhiveryPlanDate).type(del_plandt)
     }
-    clickOnSaveBtn(){
+    clickOn_SaveBtn(){
         cy.get(this.weblocators.saveButton.continue).click()
     }
-    clickOnCancelBtn(){
+    clickOn_CancelBtn(){
         cy.get(this.weblocators.cancelButton.continue).click()
     }
     openURL(){
